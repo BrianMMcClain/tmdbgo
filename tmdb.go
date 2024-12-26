@@ -1,4 +1,4 @@
-package tmdb
+package tmdbgo
 
 import (
 	"encoding/json"
