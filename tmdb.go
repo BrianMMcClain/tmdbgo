@@ -21,11 +21,17 @@ type Movie struct {
 	BackdropPath string     `json:"backdrop_path"`
 	Status       string     `json:"status"`
 	Language     string     `json:"original_language"`
+	Genres       []Genre    `json:"genres"`
 	Stream       []Provider `json:"stream"`
 	Free         []Provider `json:"free"`
 	Buy          []Provider `json:"buy"`
 	Rent         []Provider `json:"rent"`
 	Ads          []Provider `json:"ads"`
+}
+
+type Genre struct {
+	ID   int    `json:"id"`
+	Name string `json:"name"`
 }
 
 type Provider struct {
